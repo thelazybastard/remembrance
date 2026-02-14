@@ -3,10 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <title>Remembrance</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./output.css">
   </head>
   <body>
-    <h1>Welcome, what would you like to do today?</h1>
-    <p>Welcome to your Electron application.</p>
+
+    <h1 class="font-sans text-4xl font-bold tracking-tight text-center pt-8">Welcome, what would you like to do today?</h1>
+
+    <div class="flex justify-center items-center gap-4 p-8">
+      <button class="rounded bg-blue-500 text-white px-4 py-2 hover:shadow-lg transition-shadow">Add task</button>
+      <button class="rounded bg-red-500 text-white px-4 py-2 hover:shadow-lg transition-shadow">Remove task</button>
+      <select class="rounded border border-gray-300 px-4 py-2 hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="all">All</option>
+        <option value="done">Done</option>
+        <option value="in-progress">In Progress</option>
+      </select>
+    </div>
+
+    <div class="border border-gray-200 shadow-sm rounded-lg p-4 bg-white w-[95%] mx-auto">
+      <div class="space-y-3"></div>
+    </div>
+
   </body>
 </html>
